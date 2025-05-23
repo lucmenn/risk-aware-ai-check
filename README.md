@@ -1,73 +1,121 @@
-# Welcome to your Lovable project
 
-## Project info
+# CyberRiskScore 🛡️
 
-**URL**: https://lovable.dev/projects/9ac48071-a1ae-4eb4-b49f-31a3a6c14e49
+Uma ferramenta de avaliação de riscos de segurança cibernética pessoal que ajuda usuários a identificar vulnerabilidades e receber recomendações personalizadas para melhorar sua proteção digital.
 
-## How can I edit this code?
+![CyberRiskScore Dashboard](docs/screenshots/dashboard.png)
 
-There are several ways of editing your application.
+## 🚀 Características Principais
 
-**Use Lovable**
+- **Avaliação Interativa**: Questionário estruturado cobrindo senhas, dispositivos e privacidade
+- **Score de Risco Personalizado**: Algoritmo inteligente que calcula seu nível de risco
+- **Recomendações Prioritizadas**: Sugestões práticas organizadas por prioridade (Alta, Média, Baixa)
+- **Interface Moderna**: Design responsivo inspirado em dashboards de segurança profissionais
+- **Análise por Áreas**: Avaliação detalhada de diferentes aspectos de segurança
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9ac48071-a1ae-4eb4-b49f-31a3a6c14e49) and start prompting.
+## 🛠️ Tecnologias Utilizadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18, TypeScript, Vite
+- **UI/UX**: Tailwind CSS, shadcn/ui, Lucide React
+- **Routing**: React Router DOM
+- **State Management**: React Hooks
+- **Build Tool**: Vite
+- **Package Manager**: npm
 
-**Use your preferred IDE**
+## 📦 Instalação
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Pré-requisitos
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (versão 18 ou superior)
+- npm ou yarn
 
-Follow these steps:
+### Passos para Instalação
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/cyberrisk-score.git
+cd cyberrisk-score
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Instale as dependências:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Execute o projeto em modo de desenvolvimento:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Abra o navegador em `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎯 Como Usar
 
-**Use GitHub Codespaces**
+1. **Acesse a Página Inicial**: Clique em "Iniciar Avaliação de Risco"
+2. **Responda o Questionário**: Complete todas as perguntas sobre senhas, dispositivos e privacidade
+3. **Visualize seu Score**: Receba uma pontuação de 0-100 indicando seu nível de risco
+4. **Siga as Recomendações**: Implemente as ações sugeridas baseadas em sua prioridade
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📊 Sistema de Pontuação
 
-## What technologies are used for this project?
+- **0-30**: Risco Baixo (Verde) - Boa proteção
+- **31-70**: Risco Médio (Amarelo) - Melhorias necessárias
+- **71-100**: Risco Alto (Vermelho) - Ação imediata requerida
 
-This project is built with:
+## 🏗️ Estrutura do Projeto
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/           # Componentes React
+│   ├── ui/              # Componentes base (shadcn/ui)
+│   ├── RecommendationCard.tsx
+│   ├── RiskAssessment.tsx
+│   └── RiskScore.tsx
+├── pages/               # Páginas da aplicação
+│   └── Index.tsx
+├── utils/               # Utilitários e lógica de negócio
+│   └── riskAnalysis.ts
+└── styles/
+    └── index.css
+```
 
-## How can I deploy this project?
+## 🔧 Scripts Disponíveis
 
-Simply open [Lovable](https://lovable.dev/projects/9ac48071-a1ae-4eb4-b49f-31a3a6c14e49) and click on Share -> Publish.
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria a build de produção
+- `npm run preview` - Visualiza a build de produção
+- `npm run lint` - Executa o linter
 
-## Can I connect a custom domain to my Lovable project?
+## 🤝 Contribuindo
 
-Yes, you can!
+Consulte o [Guia de Contribuição](docs/CONTRIBUTING.md) para instruções detalhadas sobre como contribuir para o projeto.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📚 Documentação
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- [Documentação Técnica](docs/TECHNICAL.md)
+- [API de Análise de Riscos](docs/API.md)
+- [Guia de Deployment](docs/DEPLOYMENT.md)
+- [Changelog](docs/CHANGELOG.md)
+
+## 📄 Licença
+
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 🆘 Suporte
+
+Para suporte e dúvidas:
+- Abra uma [issue](https://github.com/seu-usuario/cyberrisk-score/issues)
+- Entre em contato via email: suporte@cyberriskscore.com
+
+## 🔮 Roadmap
+
+- [ ] Integração com APIs de threat intelligence
+- [ ] Relatórios em PDF
+- [ ] Dashboard administrativo
+- [ ] Sistema de notificações
+- [ ] Integração com gestores de senhas
+- [ ] Modo empresarial (multi-usuário)
+
+---
+
+Desenvolvido com ❤️ para tornar a segurança cibernética acessível a todos.
