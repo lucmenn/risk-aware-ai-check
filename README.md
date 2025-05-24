@@ -1,4 +1,4 @@
-
+https://lovable.dev/projects/9ac48071-a1ae-4eb4-b49f-31a3a6c14e49
 # CyberRiskScore 🛡️
 
 Uma ferramenta de avaliação de riscos de segurança cibernética pessoal que ajuda usuários a identificar vulnerabilidades e receber recomendações personalizadas para melhorar sua proteção digital.
